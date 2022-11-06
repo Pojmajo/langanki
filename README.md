@@ -27,9 +27,9 @@ Tool for exporting foreign-language vocabulary to Anki
 audio to the Back of our AnkiCards. 
 Worksheet name would also be name of an AnkiDeck.
 
-* First column words to translate _A_ - AnkiCard Front
-* Second column translated words _B_ - AnkiCard Back
-3. To ease word translation we can use Google Sheets formula for 
+* First column _A_ words to translate - AnkiCard Front
+* Second column _B_ translated words - AnkiCard Back
+3. To ease word translation we can use Google Sheets formula: 
    ```sh
    =GOOGLETRANSLATE(cell with text, “source language”, “target language”)
    ```
