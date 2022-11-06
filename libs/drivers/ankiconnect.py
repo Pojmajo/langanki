@@ -43,7 +43,7 @@ class AnkiConnectDriver:
             raise EnvironmentError('This class is supposed to be run within ContextManager')
 
         request = json.dumps(self.request(action, **params)).encode('utf-8')
-        response = requests.post(LOCALHOST, request, timeout=5)
+        response = requests.post(LOCALHOST, request, timeout=15)
         if response.status_code != HTTPStatus.OK:
             raise InterruptedError('Cannot connect to localhost')
 
