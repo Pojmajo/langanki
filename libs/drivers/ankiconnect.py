@@ -133,4 +133,4 @@ class AnkiConnectDriver:
 
     def __exit__(self, exception_type, exception_value, traceback):
         # ToDo - here close Anki
-        pass
+        self._is_context_manager = False
